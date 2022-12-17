@@ -1,0 +1,120 @@
+:root {
+  --color: #343633;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container__nav {
+  padding: 2rem;
+}
+.container__nav .nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__nav .nav__logo {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+.container__nav .nav__logo .logo {
+  width: 5rem;
+}
+.container__nav .nav__logo .nav-text {
+  font-size: 2.5rem;
+}
+.container__nav .nav__links__container .nav__link .icon {
+  width: 4rem;
+  fill: black;
+}
+
+.container__principal {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  max-width: 100rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.container__principal .container__image .image {
+  width: 100%;
+}
+.container__principal .form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+}
+.container__principal .form__container .title__principal {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 1rem 2rem 5rem 2rem;
+}
+.container__principal .form__container .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.container__principal .form__container .formulario label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container__principal .form__container .formulario label span {
+  font-size: 1.8rem;
+}
+.container__principal .form__container .formulario label input {
+  width: 25rem;
+  border: none;
+  border-bottom: medium solid rgb(120, 120, 120);
+  padding: 0.2rem 1rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+.container__principal .form__container .formulario button {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #7fdaf3;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: thin solid transparent;
+  transition: background-color 400ms linear;
+}
+.container__principal .form__container .formulario button:hover {
+  background-color: #00BCF2;
+  cursor: pointer;
+}
+
+@media (max-width: 53rem) {
+  .container__principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .container__principal .container__image .image {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

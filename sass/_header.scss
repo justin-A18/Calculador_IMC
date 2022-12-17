@@ -1,0 +1,33 @@
+.container__nav{
+    padding: 2rem;
+    
+    .nav__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__logo{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        cursor: pointer;
+        .logo{
+            width: 5rem;
+        }
+
+        .nav-text{
+            font-size: 2.5rem;
+        }
+    }
+
+    .nav__links__container{
+
+        .nav__link{
+            .icon{
+                width: 4rem;
+                fill:black;
+            }
+        }
+    }
+}
